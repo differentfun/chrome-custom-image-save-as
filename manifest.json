@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Image Save As",
+  "description": "Adds a context-menu entry that converts images to a chosen format/extension before saving.",
+  "version": "1.0.0",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html"
+}
